@@ -1,60 +1,42 @@
 # 🪱 SocialWorm
 
-**An open-source AI agent that manages your social media — with you in control.**
+Agente de IA open source que te ayuda con tus redes sociales: planifica tu contenido, adapta cada posteo a cada red y escribe borradores de respuesta a los comentarios. Nada se publica sin tu OK.
 
-SocialWorm helps you plan content, write posts adapted to each platform, schedule them and learn what works. It drafts; you approve. Nothing gets published without your OK.
+Es parte de [Worm Agents](https://worm-agents.com), junto con [WorkWorm](https://github.com/worm-agents/workworm), [LoveWorm](https://github.com/worm-agents/loveworm) e [InvestWorm](https://github.com/worm-agents/investworm).
 
-Part of the [<org>](https://github.com/<org>) family of open-source AI agents, alongside [WorkWorm](https://github.com/<org>/workworm), [InvestWorm](https://github.com/<org>/investworm) and [LoveWorm](https://github.com/<org>/loveworm).
+> 🚧 **En desarrollo.** Todavía no hay código para instalar. Si te interesa, seguí el repo o abrí un issue con lo que te gustaría que haga.
 
----
+## Qué va a hacer
 
-## Features
+- **Planificar contenido**: un calendario semanal a partir de tus temas y objetivos.
+- **Escribir posteos**: adapta una idea al formato y al tono de cada red (X, LinkedIn, Instagram…).
+- **Programar**: publica los posteos que aprobaste en el mejor horario.
+- **Resumir resultados**: qué funcionó y qué probar después.
+- **Responder**: borradores de respuesta a comentarios y menciones para que los revises.
 
-- 🗓️ **Content planner** — builds a weekly content calendar from your goals and topics
-- ✍️ **Post writer** — adapts one idea to each platform's format and tone (X, LinkedIn, Instagram…)
-- ⏰ **Scheduler** — queues approved posts and publishes them at the best time
-- 📈 **Analytics digest** — summarizes what performed well and suggests what to try next
-- 💬 **Reply assistant** — drafts responses to comments and mentions for you to review
-- 🔌 **Bring your own model** — works with <Claude / OpenAI / local models>
+## Principios
 
-> 🚧 Early development. Some features may be in progress.
+- **Vos aprobás todo.** Cada posteo y cada respuesta esperan tu OK antes de salir.
+- **Solo APIs oficiales.** Usa la API de cada red, sin scraping ni automatizar el navegador.
+- **Nada de interacción falsa.** Sin likes ni follows automáticos, cuentas falsas ni spam.
+- **Tus datos son tuyos.** Los tokens y el contenido quedan en tu computadora.
 
-## Principles
+## Cómo va a funcionar
 
-- **Human in the loop.** Every post and reply needs your approval before it goes out.
-- **Official APIs only.** SocialWorm uses each platform's official API. No scraping, no browser automation.
-- **No fake engagement.** No bot likes, follows, fake accounts or spam. It helps you create better content, not game the algorithm.
-- **Your data stays yours.** Tokens and content are stored locally.
+Igual que los otros worms: corre en tu computadora, usa [Claude Code](https://claude.com/claude-code) con tu cuenta de Claude y está pensado para Argentina.
 
-## Quickstart
+## Hoja de ruta
 
-```bash
-git clone https://github.com/<org>/socialworm.git
-cd socialworm
-pip install -r requirements.txt
-cp .env.example .env   # add your API keys
-python -m socialworm
-```
+- [ ] Redactor de posteos para varias redes
+- [ ] Calendario de contenido
+- [ ] Programación de posteos (LinkedIn, X)
+- [ ] Resumen de resultados
+- [ ] Tablero local
 
-## Configuration
+## Aportes
 
-| Variable | Description |
-|---|---|
-| `ANTHROPIC_API_KEY` | API key for the LLM provider |
-| `<PLATFORM>_API_KEY` | API credentials for each connected platform |
+Los aportes son bienvenidos. Abrí un issue para charlar la idea antes de mandar un PR.
 
-## Roadmap
-
-- [ ] Post writer (multi-platform)
-- [ ] Content calendar
-- [ ] Scheduler (LinkedIn, X)
-- [ ] Analytics digest
-- [ ] Web UI
-
-## Contributing
-
-Contributions are welcome! Open an issue to discuss what you'd like to change, or send a PR. See [CONTRIBUTING.md](https://github.com/<org>/.github/blob/main/CONTRIBUTING.md).
-
-## License
+## Licencia
 
 [Apache-2.0](LICENSE)
